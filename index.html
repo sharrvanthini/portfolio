@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sharrvanthini GB | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --primary:#6a5acd;
+  --secondary:#ff6f91;
+  --bg:#f4f6ff;
+  --card:#ffffff;
+  --text:#333;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:linear-gradient(120deg,var(--primary),var(--secondary));
+  padding:20px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  background:var(--bg);
+  border-radius:20px;
+  padding:25px;
+}
+
+/* Header */
+.header{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  background:var(--card);
+  padding:20px;
+  border-radius:16px;
+  margin-bottom:20px;
+}
+
+.profile{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--primary);
+}
+
+.header h1{
+  color:var(--primary);
+}
+
+.header p{
+  color:#555;
+  font-size:14px;
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+}
+
+/* Cards */
+.card{
+  background:var(--card);
+  padding:16px;
+  border-radius:14px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card h3{
+  color:var(--primary);
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+.card p, li{
+  font-size:13px;
+  color:var(--text);
+}
+
+ul{
+  padding-left:18px;
+}
+
+/* Tags */
+.tags span{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:12px;
+  margin:4px 4px 0 0;
+}
+
+/* Links */
+.links a{
+  display:block;
+  font-size:13px;
+  color:var(--secondary);
+  text-decoration:none;
+  margin-bottom:6px;
+}
+
+.links a:hover{
+  text-decoration:underline;
+}
+
+/* Footer */
+.footer{
+  text-align:center;
+  margin-top:20px;
+  font-size:12px;
+  color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <img src="Untitled design.jpg" class="profile" alt="Profile Image">
+    <div>
+      <h1>Sharrvanthini GB</h1>
+      <p>B.Tech Information Technology | Bannari Amman Institute of Technology</p>
+      <p>📞 +91 8778683188 | 📍 Dharapuram</p>
+      <p>📧 sharrvanthinigb.it24@bitsathy.ac.in</p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="grid">
+
+    <div class="card">
+      <h3>Career Objective</h3>
+      <p>
+        Enthusiastic and self-motivated IT student passionate about learning,
+        innovation, and applying technical skills in real-world projects.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Education</h3>
+      <p><b>B.Tech IT</b> (2024–2028)<br>Bannari Amman Institute of Technology</p>
+      <p><b>HSC</b> – CBSE (2023–2024)</p>
+      <p><b>SSLC</b> – CBSE (2021–2022)</p>
+    </div>
+
+    <div class="card">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>C Programming (40+ LeetCode problems)</li>
+        <li>Python (Learning)</li>
+        <li>HTML & UI/UX (Figma)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Area of Interest</h3>
+      <div class="tags">
+        <span>Web Development</span>
+        <span>UI/UX</span>
+        <span>Cloud</span>
+        <span>Cybersecurity</span>
+        <span>AI & IoT</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <div class="tags">
+        <span>Communication</span>
+        <span>Leadership</span>
+        <span>Adaptability</span>
+        <span>Time Management</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Activities & Hobbies</h3>
+      <ul>
+        <li>Member – Muthamizh Mandram</li>
+        <li>Full Stack Lab</li>
+        <li>Badminton & Ball Badminton</li>
+        <li>Photo & Video Editing</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Oracle Cloud Infrastructure</li>
+        <li>Google Cloud – Gen AI & LLM</li>
+        <li>IBM – AI, Data, Security</li>
+      </ul>
+    </div>
+
+    <div class="card links">
+      <h3>Links</h3>
+      <a href="https://www.linkedin.com/in/sharrvanthinibalakumaran07/">LinkedIn</a>
+      <a href="https://github.com/sharrvanthin">GitHub</a>
+      <a href="https://leetcode.com/u/SHARRVANTHINI/">LeetCode</a>
+      <a href="https://www.hackerrank.com/profile/sharrvanthinigrb">HackerRank</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 Sharrvanthini GB | Portfolio
+  </div>
+
+</div>
+
+</body>
+</html>
